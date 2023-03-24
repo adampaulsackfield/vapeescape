@@ -1,0 +1,7 @@
+@use './assets/sass/base';
+@use './assets/sass/variables' as *;
+
+.App {
+  min-height: 100vh;
+  background-color: $raisin-black;
+}

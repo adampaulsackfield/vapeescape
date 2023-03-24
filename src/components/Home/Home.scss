@@ -1,0 +1,39 @@
+@use '../../assets/sass/variables' as *;
+
+// .home {
+// }
+
+.hero {
+  max-width: 100vw;
+  height: 400px;
+  background: url('../../assets/images/biffbar.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &__header {
+    // width: 150px;
+    // margin-left: 100px;
+    // padding-top: 40px;
+
+    text-align: center;
+
+    &-title {
+      // background: $baby-powder;
+      color: $pumpkin;
+      font-size: 48px;
+    }
+
+    // &-price {
+    // }
+
+    &-cross {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.price {
+  &__cross {
+    text-decoration: line-through;
+  }
+}

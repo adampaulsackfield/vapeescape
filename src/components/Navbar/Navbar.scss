@@ -1,0 +1,86 @@
+@use '../../assets/sass/variables' as *;
+
+// #facebook {
+//   color: #1877f2;
+// }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 6px;
+  max-width: 100vw;
+  border-bottom: solid 2px $pumpkin;
+
+  &-show-menu {
+    flex-direction: column;
+  }
+
+  &__logo {
+    letter-spacing: 3px;
+    font-family: $fontSecondary;
+    font-size: 48px;
+    text-align: center;
+    color: $razzmatazz;
+  }
+
+  &__nav {
+    display: none;
+    background-color: $raisin-black;
+
+    &-show-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-link {
+      font-size: 20px;
+      margin-right: 10px;
+      color: white;
+
+      transition: color ease-in-out 0.3s;
+
+      &:hover {
+        color: $pumpkin;
+      }
+
+      &-active {
+        // color: $majorelle-blue;
+        border-bottom: solid 2px $razzmatazz;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 10px;
+
+    &-icon {
+      // padding-right: 10px;
+      transition: all ease-in 0.3s;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    // height: 60px;
+
+    &__logo {
+      // font-size: 32px;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
